@@ -1,6 +1,7 @@
 ---
-title: Lamplight
+title: Lamplight Project
 layout: project.njk
+permalink: lamplight.html
 galleryImages:
   - "/images/lamplight/image1.jpg"
   - "/images/lamplight/image2.jpg"

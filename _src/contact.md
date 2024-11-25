@@ -1,11 +1,13 @@
 ---
 title: Contact
 layout: home.njk
+permalink: contact.html
 ---
 
 # Contact Me
 
-- **Phone:** [123-456-7890](tel:+1234567890)
-- **Email:** [your.email@example.com](mailto:your.email@example.com)
-- **GitHub:** [yourusername](https://github.com/yourusername)
-- **LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)
+<div class="contact-info">
+  <p>Email: <a href="mailto:rorange@psu.edu">rorange@psu.edu</a></p>
+  <p>GitHub: <a href="https://github.com/Remdog712" target="_blank">github.com/Remdog712</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/remington-orange" target="_blank">linkedin.com/in/remington-orange</a></p>
+</div>

@@ -1,14 +1,27 @@
 ---
 title: Home
 layout: home.njk
+permalink: index.html
 ---
 
 # About Me
 
-![Your Photo](/images/your-photo.jpg)
+I'm a junior at Penn State Behrend, majoring in Digital Media, Arts, and Technology. I have a passion for digital creation, and I'm currently working as a student assistant at the Virtual and Augmented Reality (VAR) Lab at Penn State Behrend.
 
-Your bio goes here.
+I'm always seeking ways to improve my skills, with the goal of working in an environment that values efficiency, creativity, and digital innovation. I'm eager to apply my knowledge to any job or business.
 
-## Resume
+While I’ve always enjoyed playing video games, my curiosity has shifted toward understanding how games function and are created. This growing fascination fuels my desire to learn more about game development.
 
-<iframe src="/path/to/your-resume.pdf" width="100%" height="600px"></iframe>
+I grew up in Clarion County, nestled between Pittsburgh and Erie, and have a deep appreciation for both cities—each offering something unique that I value.
+
+If you'd like to know more about my work and experience, feel free to check out my resume.
+
+## Hey That's Me!
+
+<img src="/images/Me.jpg" class="about-photo" alt="Your Photo">
+
+# Resume
+
+<div class="resume-container">
+  <iframe src="/images/RemingtonOrangeResume.pdf"></iframe>
+</div>

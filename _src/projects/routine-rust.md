@@ -1,6 +1,7 @@
 ---
-title: Routine Rust
+title: Routine Rust Project
 layout: project.njk
+permalink: rust-routine.html
 galleryImages:
   - "/images/routine-rust/image1.jpg"
   - "/images/routine-rust/image2.jpg"
