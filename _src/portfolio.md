@@ -11,9 +11,12 @@ permalink: portfolio.html
 <div class="gallery">
   {% for file in image_metadata %}
   <figure>
-    <a href="/project-details/{{ file.filename | replace: '.jpg', '' | replace: '.jpeg', '' | replace: '.png', '' | replace: '.gif', '' | replace: '.webp', '' | replace: '_', '-' | slugify }}">
+    <!-- Link to the file's path for the lightbox -->
+    <a href="{{ file.filepath }}" class="lightbox">
+      <!-- Use the file path for the image source -->
       <img src="{{ file.filepath }}" alt="{{ file.filename }}">
       <figcaption>
+        <!-- Clean up the filename to make a user-friendly caption -->
         {{ file.filename 
             | replace: ".jpg", "" 
             | replace: ".jpeg", "" 
@@ -25,8 +28,6 @@ permalink: portfolio.html
       </figcaption>
     </a>
   </figure>
-  {% else %}
-  <p>No sample work available at the moment.</p>
   {% endfor %}
 </div>
 

@@ -10,9 +10,11 @@ permalink: projects/models/pumpkin-boat.html
 
 ![Pumpkin Boat Concept Art](/images/pumpkin-boat.jpg)
 
-- **Artist:** Artist Name
+- **Artist:** Filippo Morghen
 - **Title:** A Pumpkin Used as a Fishing Boat (1769)
-- **Original Site:** [Link to Original Site](https://original-site-link.com)
+- **Original Site:** [Link to Original Image](https://artvee.com/dl/a-pumpkin-used-as-a-fishing-boat/#00)
+
+## 3D Modeled and Animated Version
 
 <div id="threejs-container">
   <canvas id="modelCanvas" style="width: 100%; height: 100%;"></canvas>

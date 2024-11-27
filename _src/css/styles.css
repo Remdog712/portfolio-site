@@ -125,6 +125,13 @@ nav ul li a:hover {
     padding: 20px;
     max-width: 1200px;
   }
+
+  /* Center the video embed */
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
   
   .gallery {
     display: flex;
@@ -157,6 +164,7 @@ nav ul li a:hover {
     color: #4A4A4A;
     font-style: italic;
   }
+
   
   .projects {
     display: flex;

@@ -8,7 +8,7 @@ permalink: threejs.html
 
 ## About the Project
 
-This project showcases 3D models, including the Pumpkin Boat, Pumpkin House, and Boat House. Explore them below:
+This project showcases 3D models created and animated inside Blender and texturing using Adobe Substance Painter. Each model was based on the according image from artist, Filippo Morghen. From Artvee.com:  Filippo Morghen was an Italian printmaker and engraver, born in Florence but working in Naples from circa 1760. Much of his work comprised engravings of the antiquities of Italy, such as the ruined cities of Paestum and Herculaneum, showing their architecture, frescoes, statues and other art. These illustrations are from the book: Suite of the most notable things seen by John Wilkins erudite English Bishop during his famous voyage from the Earth to the Moon"
 
 ## Models
 
