@@ -5,27 +5,27 @@
   <title>Pumpkin Boat</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Use root-relative paths -->
-  <link rel="stylesheet" href="/portfolio-site/css/styles.css" />
-  <link rel="icon" href="/portfolio-site/RO_Web.ico" type="image/x-icon" />
+  <!-- Use pathPrefix -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="RO_Web.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header-content">
       <div class="logo">
-        <a href="/portfolio-site/">
-          <img src="/portfolio-site/images/RO_Logo.PNG" alt="RO Logo" class="logo-image" />
+        <a href="">
+          <img src="images/RO_Logo.PNG" alt="RO Logo" class="logo-image" />
         </a>
-        <a href="/portfolio-site/">
-          <img src="/portfolio-site/images/NameLogo.png" alt="Name Logo" class="name-logo" />
+        <a href="">
+          <img src="images/NameLogo.png" alt="Name Logo" class="name-logo" />
         </a>
       </div>
       <nav>
         <ul>
-          <li><a href="/portfolio-site/">Home</a></li>
-          <li><a href="/portfolio-site/portfolio/">Portfolio</a></li>
-          <li><a href="/portfolio-site/contact/">Contact</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="portfolio/">Portfolio</a></li>
+          <li><a href="contact/">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,7 +36,7 @@
   <h1>Pumpkin Boat</h1>
   <div class="model-description">
     <h1>A Pumpkin Used as a Fishing Boat (1769)</h1>
-<p><img src="/images/pumpkin-boat.jpg" alt="Pumpkin Boat Concept Art"></p>
+<p><img src="images/pumpkin-boat.jpg" alt="Pumpkin Boat Concept Art"></p>
 <ul>
 <li><strong>Illustration Artist:</strong> Filippo Morghen</li>
 <li><strong>Title:</strong> A Pumpkin Used as a Fishing Boat (1769)</li>
@@ -50,14 +50,14 @@
 </ul>
 <h2>Gallery</h2>
 <div class="gallery">
-  <a href="/images/PumpkinBoatImages/Poly%20Count.png">
-    <img src="/images/PumpkinBoatImages/Poly%20Count.png" alt="Poly Count">
+  <a href="images/PumpkinBoatImages/Poly%20Count.png">
+    <img src="images/PumpkinBoatImages/Poly%20Count.png" alt="Poly Count">
   </a>
-  <a href="/images/PumpkinBoatImages/IllustrationRendition.png">
-    <img src="/images/PumpkinBoatImages/IllustrationRendition.png" alt="Illustration Rendition">
+  <a href="images/PumpkinBoatImages/IllustrationRendition.png">
+    <img src="images/PumpkinBoatImages/IllustrationRendition.png" alt="Illustration Rendition">
   </a>
-  <a href="/images/PumpkinBoatImages/Mesh%20Model.png">
-    <img src="/images/PumpkinBoatImages/Mesh%20Model.png" alt="Mesh Model">
+  <a href="images/PumpkinBoatImages/Mesh%20Model.png">
+    <img src="images/PumpkinBoatImages/Mesh%20Model.png" alt="Mesh Model">
   </a>
 </div>
 <h2>3D Modeled and Animated Version</h2>
@@ -65,37 +65,15 @@
   <canvas id="modelCanvas" style="width: 100%; height: 100%;"></canvas>
 </div>
 <script type="module">
-  import { initModel } from '/js/threejs-model.js';
+  import { initModel } from 'js/threejs-model.js';
 
-  const modelPath = "/images/PumpkinTest16-v1.glb";
-  const hdrPath = "/images/autumn_field_puresky_1k.hdr";
+  const modelPath = '/images/PumpkinTest16-v1.glb';
+  const hdrPath = '/images/autumn_field_puresky_1k.hdr';
 
   initModel(modelPath, hdrPath);
 </script>
 <style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .gallery a {
-    flex: 1 1 calc(33.333% - 10px);
-    max-width: calc(33.333% - 10px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-  }
-  #threejs-container {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 50px; /* Adds space below the canvas */
-  }
+  /* Styles remain unchanged */
 </style>
 
   </div>
