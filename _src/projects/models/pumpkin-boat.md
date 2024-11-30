@@ -1,7 +1,7 @@
 ---
 title: Pumpkin Boat
 layout: model.njk
-modelPath: "/images/PumpkinTest16.glb"
+modelPath: "/images/PumpkinTest16-v1.glb"
 hdrPath: "/images/autumn_field_puresky_1k.hdr"
 permalink: projects/models/pumpkin-boat.html
 ---

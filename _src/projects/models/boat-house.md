@@ -1,7 +1,7 @@
 ---
 title: Boat House
 layout: model.njk
-modelPath: "/images/HouseBoatMerge15.glb"
+modelPath: "/images/HouseBoatMerge15-v3.glb"
 hdrPath: "/images/kloofendal_28d_misty_puresky_1k.hdr"
 permalink: projects/models/boat-house.html
 ---

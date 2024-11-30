@@ -1,13 +1,19 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.128.0/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
+import { MeshoptDecoder } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/libs/meshopt_decoder.module.js';
 import { RGBELoader } from 'https://cdn.skypack.dev/three@0.128.0/examples/jsm/loaders/RGBELoader.js';
 
 export function initModel(modelPath, hdrPath = null) {
   const canvas = document.getElementById('modelCanvas');
   const scene = new THREE.Scene();
 
-  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    500
+  );
   camera.position.set(-10, 1.5, 4);
 
   const renderer = new THREE.WebGLRenderer({
@@ -44,7 +50,10 @@ export function initModel(modelPath, hdrPath = null) {
 
   let mixer;
 
+  // Set up GLTFLoader with MeshoptDecoder
   const loader = new GLTFLoader();
+  loader.setMeshoptDecoder(MeshoptDecoder); // Add this line
+
   loader.load(
     modelPath,
     (gltf) => {

@@ -1,7 +1,7 @@
 ---
 title: Pumpkin House
 layout: model.njk
-modelPath: "/images/PumpkinHouse4.glb"
+modelPath: "/images/PumpkinHouse4-v1.glb"
 hdrPath: "/images/snow_field_2_puresky_1k.hdr"
 permalink: projects/models/pumpkin-house.html
 ---
