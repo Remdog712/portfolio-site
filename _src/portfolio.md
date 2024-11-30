@@ -12,9 +12,9 @@ permalink: portfolio.html
   {% for file in image_metadata %}
   <figure>
     <!-- Link to the file's path for the lightbox -->
-    <a href="{{ file.filepath }}" class="lightbox">
+    <a href="{{ pathPrefix }}{{ file.filepath }}" class="lightbox">
       <!-- Use the file path for the image source -->
-      <img src="{{ file.filepath }}" alt="{{ file.filename }}">
+      <img src="{{ pathPrefix }}{{ file.filepath }}" alt="{{ file.filename }}">
       <figcaption>
         <!-- Clean up the filename to make a user-friendly caption -->
         {{ file.filename 
@@ -35,20 +35,20 @@ permalink: portfolio.html
 
 <div class="projects">
   <div class="project">
-    <a href="/threejs/">
-      <img src="/images/project1-cover.jpg" alt="ThreeJS Project Cover">
+    <a href="{{ pathPrefix }}threejs/">
+      <img src="{{ pathPrefix }}images/project1-cover.jpg" alt="ThreeJS Project Cover">
       <span>Project 1: ThreeJS</span>
     </a>
   </div>
   <div class="project">
-    <a href="/rust-routine/">
-      <img src="/images/project2-cover.jpg" alt="Routine Rust Project Cover">
+    <a href="{{ pathPrefix }}rust-routine/">
+      <img src="{{ pathPrefix }}images/project2-cover.jpg" alt="Routine Rust Project Cover">
       <span>Project 2: Routine Rust</span>
     </a>
   </div>
   <div class="project">
-    <a href="/lamplight/">
-      <img src="/images/project3-cover.jpg" alt="Lamplight Project Cover">
+    <a href="{{ pathPrefix }}lamplight/">
+      <img src="{{ pathPrefix }}images/project3-cover.jpg" alt="Lamplight Project Cover">
       <span>Project 3: Lamplight</span>
     </a>
   </div>

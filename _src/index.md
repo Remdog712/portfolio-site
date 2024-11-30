@@ -18,10 +18,10 @@ If you'd like to know more about my work and experience, feel free to check out 
 
 ## Hey That's Me!
 
-<img src="/images/Me.jpg" class="about-photo" alt="Your Photo">
+<img src="{{ pathPrefix }}images/Me.jpg" class="about-photo" alt="Your Photo">
 
 # Resume
 
 <div class="resume-container">
-  <iframe src="/images/RemingtonOrangeResume.pdf"></iframe>
+  <iframe src="{{ pathPrefix }}images/RemingtonOrangeResume.pdf"></iframe>
 </div>
