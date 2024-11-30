@@ -4,7 +4,5 @@ Thumbs.db
 
 node_modules/
 
-_site/
-
 .idea/
 *.log
