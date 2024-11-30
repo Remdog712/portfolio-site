@@ -10,13 +10,34 @@ permalink: projects/models/pumpkin-boat.html
 
 ![Pumpkin Boat Concept Art](/images/pumpkin-boat.jpg)
 
-- **Artist:** Filippo Morghen
+
+- **Illustration Artist:** Filippo Morghen
 - **Title:** A Pumpkin Used as a Fishing Boat (1769)
 - **Original Site:** [Link to Original Image](https://artvee.com/dl/a-pumpkin-used-as-a-fishing-boat/#00)
+- **HDRI Source:** [PolyHaven](https://polyhaven.com/a/snow_field_2_puresky) at 1k Resolution
+- **Objects:** 19
+- **Vertices:** 33,639
+- **Faces:** 35,794
+- **Triangles:** 72,262
+- **Personal Note:** To preserve load times, everything has be created on as far reduced poly count as possible and 2k textures for each object. This model was created entirely in Blender and textured in Adobe Substance Painter. This model including animations took roughly 5 hours of elapsed time.
+
+## Gallery
+
+<div class="gallery">
+  <a href="/images/PumpkinBoatImages/Poly%20Count.png">
+    <img src="/images/PumpkinBoatImages/Poly%20Count.png" alt="Poly Count">
+  </a>
+  <a href="/images/PumpkinBoatImages/IllustrationRendition.png">
+    <img src="/images/PumpkinBoatImages/IllustrationRendition.png" alt="Illustration Rendition">
+  </a>
+  <a href="/images/PumpkinBoatImages/Mesh%20Model.png">
+    <img src="/images/PumpkinBoatImages/Mesh%20Model.png" alt="Mesh Model">
+  </a>
+</div>
 
 ## 3D Modeled and Animated Version
 
-<div id="threejs-container">
+<div id="threejs-container" style="margin-bottom: 50px;">
   <canvas id="modelCanvas" style="width: 100%; height: 100%;"></canvas>
 </div>
 
@@ -28,3 +49,30 @@ permalink: projects/models/pumpkin-boat.html
 
   initModel(modelPath, hdrPath);
 </script>
+
+
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .gallery a {
+    flex: 1 1 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+  }
+  #threejs-container {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 50px; /* Adds space below the canvas */
+  }
+</style>

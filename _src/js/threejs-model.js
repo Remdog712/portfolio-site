@@ -7,24 +7,20 @@ export function initModel(modelPath, hdrPath = null) {
   const canvas = document.getElementById('modelCanvas');
   const scene = new THREE.Scene();
 
-  // Set up the camera
-  const camera = new THREE.PerspectiveCamera(
-    75,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    1000
-  );
-  camera.position.set(0, 1.5, 4);
+  const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
+  camera.position.set(-10, 1.5, 4);
 
-  // Set up the renderer
-  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+  const renderer = new THREE.WebGLRenderer({
+    canvas,
+    antialias: true,
+    logarithmicDepthBuffer: true,
+  });
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
   renderer.outputEncoding = THREE.sRGBEncoding;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1;
 
-  // Add HDRI background
   if (hdrPath) {
     const rgbeLoader = new RGBELoader();
     rgbeLoader.load(
@@ -41,14 +37,13 @@ export function initModel(modelPath, hdrPath = null) {
     );
   }
 
-  // Add OrbitControls for camera movement
   const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
+  controls.minDistance = 0.01;
+  controls.maxDistance = 100;
 
-  // Variable to manage animations
   let mixer;
 
-  // Load the GLTF model
   const loader = new GLTFLoader();
   loader.load(
     modelPath,
@@ -56,9 +51,15 @@ export function initModel(modelPath, hdrPath = null) {
       const model = gltf.scene;
       model.position.set(0, 0, 0);
       model.scale.set(1, 1, 1);
+
+      model.traverse((child) => {
+        if (child.isMesh) {
+          child.frustumCulled = false;
+        }
+      });
+
       scene.add(model);
 
-      // Set up animation mixer
       if (gltf.animations && gltf.animations.length > 0) {
         mixer = new THREE.AnimationMixer(model);
         gltf.animations.forEach((clip) => {
@@ -73,19 +74,16 @@ export function initModel(modelPath, hdrPath = null) {
     }
   );
 
-  // Handle window resizing
   window.addEventListener('resize', () => {
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
     renderer.setSize(window.innerWidth, window.innerHeight);
   });
 
-  // Animation loop
   const clock = new THREE.Clock();
   function animate() {
     requestAnimationFrame(animate);
 
-    // Update animations
     if (mixer) {
       const delta = clock.getDelta();
       mixer.update(delta);
