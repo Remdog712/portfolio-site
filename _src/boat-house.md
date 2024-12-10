@@ -1,14 +1,14 @@
 ---
 title: Boat House
 layout: model.njk
-modelPath: "/images/HouseBoatMerge15-v3.glb"
-hdrPath: "/images/kloofendal_28d_misty_puresky_1k.hdr"
-permalink: projects/models/boat-house.html
+modelPath: "/portfolio-site/images/HouseBoatMerge15-v3.glb"
+hdrPath: "/portfolio-site/images/kloofendal_28d_misty_puresky_1k.hdr"
+permalink: boat-house.html
 ---
 
 # A House on Water, and a New Way to Summon Geese by the Beat of a Drum (1769)
 
-![Pumpkin Boat Concept Art](/images/house-boat.jpg)
+![Pumpkin Boat Concept Art](/portfolio-site/images/house-boat.jpg)
 
 ## About the Model
 
@@ -22,19 +22,17 @@ permalink: projects/models/boat-house.html
 - **Triangles:** 856,972
 - **Personal Note:** To preserve load times, everything has be created on as far reduced poly count as possible and 2k textures for each object. This model was created entirely in Blender and textured in Adobe Substance Painter. This model including animations took roughly 6 hours of elapsed time.
 
-
-
 ## Gallery
 
 <div class="gallery">
-  <a href="/images/HouseBoatImages/Poly%20Count.png">
-    <img src="/images/HouseBoatImages/Poly%20Count.png" alt="Poly Count">
+  <a href="/portfolio-site/images/HouseBoatImages/Poly%20Count.png">
+    <img src="/portfolio-site/images/HouseBoatImages/Poly%20Count.png" alt="Poly Count">
   </a>
-  <a href="/images/HouseBoatImages/Illustration%20Rendition.png">
-    <img src="/images/HouseBoatImages/Illustration%20Rendition.png" alt="Illustration Rendition">
+  <a href="/portfolio-site/images/HouseBoatImages/Illustration%20Rendition.png">
+    <img src="/portfolio-site/images/HouseBoatImages/Illustration%20Rendition.png" alt="Illustration Rendition">
   </a>
-  <a href="/images/HouseBoatImages/Mesh%20Model.png">
-    <img src="/images/HouseBoatImages/Mesh%20Model.png" alt="Mesh Model">
+  <a href="/portfolio-site/images/HouseBoatImages/Mesh%20Model.png">
+    <img src="/portfolio-site/images/HouseBoatImages/Mesh%20Model.png" alt="Mesh Model">
   </a>
 </div>
 
@@ -45,39 +43,13 @@ permalink: projects/models/boat-house.html
 </div>
 
 <script type="module">
-  import { initModel } from '/js/threejs-model.js';
+  import { initModel } from '/portfolio-site/js/threejs-model.js';
 
-  const modelPath = "{{ modelPath }}";
-  const hdrPath = "{{ hdrPath }}";
+  const modelPath = '{{ modelPath }}';
+  const hdrPath = '{{ hdrPath }}';
 
   initModel(modelPath, hdrPath);
 </script>
 
-
 <style>
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
-  }
-  .gallery a {
-    flex: 1 1 calc(33.333% - 10px);
-    max-width: calc(33.333% - 10px);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-decoration: none;
-  }
-  .gallery img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
-  }
-  #threejs-container {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 50px; /* Adds space below the canvas */
-  }
 </style>
-
-

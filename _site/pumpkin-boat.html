@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pumpkin Boat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Use root-relative paths -->
+  <link rel="stylesheet" href="/portfolio-site/css/styles.css" />
+  <link rel="icon" href="/portfolio-site/RO_Web.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <a href="/portfolio-site/">
+          <img src="/portfolio-site/images/RO_Logo.PNG" alt="RO Logo" class="logo-image" />
+        </a>
+        <a href="/portfolio-site/">
+          <img src="/portfolio-site/images/NameLogo.png" alt="Name Logo" class="name-logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/portfolio-site/">Home</a></li>
+          <li><a href="/portfolio-site/portfolio/">Portfolio</a></li>
+          <li><a href="/portfolio-site/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main-content">
+    
+<div class="model-content">
+  <div class="model-description">
+    <h1>A Pumpkin Used as a Fishing Boat (1769)</h1>
+<p><img src="/portfolio-site/images/pumpkin-boat.jpg" alt="Pumpkin Boat Concept Art"></p>
+<ul>
+<li><strong>Illustration Artist:</strong> Filippo Morghen</li>
+<li><strong>Title:</strong> A Pumpkin Used as a Fishing Boat (1769)</li>
+<li><strong>Original Site:</strong> <a href="https://artvee.com/dl/a-pumpkin-used-as-a-fishing-boat/#00">Link to Original Image</a></li>
+<li><strong>HDRI Source:</strong> <a href="https://polyhaven.com/a/snow_field_2_puresky">PolyHaven</a> at 1k Resolution</li>
+<li><strong>Objects:</strong> 19</li>
+<li><strong>Vertices:</strong> 33,639</li>
+<li><strong>Faces:</strong> 35,794</li>
+<li><strong>Triangles:</strong> 72,262</li>
+<li><strong>Personal Note:</strong> To preserve load times, everything has be created on as far reduced poly count as possible and 2k textures for each object. This model was created entirely in Blender and textured in Adobe Substance Painter. This model including animations took roughly 5 hours of elapsed time.</li>
+</ul>
+<h2>Gallery</h2>
+<div class="gallery">
+  <a href="/portfolio-site/images/PumpkinBoatImages/Poly%20Count.png">
+    <img src="/portfolio-site/images/PumpkinBoatImages/Poly%20Count.png" alt="Poly Count">
+  </a>
+  <a href="/portfolio-site/images/PumpkinBoatImages/IllustrationRendition.png">
+    <img src="/portfolio-site/images/PumpkinBoatImages/IllustrationRendition.png" alt="Illustration Rendition">
+  </a>
+  <a href="/portfolio-site/images/PumpkinBoatImages/Mesh%20Model.png">
+    <img src="/portfolio-site/images/PumpkinBoatImages/Mesh%20Model.png" alt="Mesh Model">
+  </a>
+</div>
+<h2>3D Modeled and Animated Version</h2>
+<div id="threejs-container" style="margin-bottom: 50px;">
+  <canvas id="modelCanvas" style="width: 100%; height: 100%;"></canvas>
+</div>
+<script type="module">
+  import { initModel } from '/portfolio-site/js/threejs-model.js';
+
+  const modelPath = '/portfolio-site/images/PumpkinTest16-v1.glb';
+  const hdrPath = '/portfolio-site/images/autumn_field_puresky_1k.hdr';
+
+  initModel(modelPath, hdrPath);
+</script>
+<style>
+  /* Styles remain unchanged */
+</style>
+
+  </div>
+  <script type="module" src="/portfolio-site/js/threejs-model.js"></script>
+</div>
+
+  </main>
+</body>
+</html>

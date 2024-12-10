@@ -5,39 +5,36 @@
   <title>Contact</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <!-- Add pathPrefix to CSS -->
-  <link rel="stylesheet" href="css/styles.css" />
-  
-  <!-- Add pathPrefix to favicon -->
-  <link rel="icon" href="RO_Web.ico" type="image/x-icon" />
-  
-  <!-- External font link (no change needed for external URLs) -->
+  <!-- Use root-relative paths -->
+  <link rel="stylesheet" href="/portfolio-site/css/styles.css" />
+  <link rel="icon" href="/portfolio-site/RO_Web.ico" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="header-content">
       <div class="logo">
-        <!-- Add pathPrefix to image sources -->
-        <a href="">
-          <img src="images/RO_Logo.PNG" alt="RO Logo" class="logo-image" />
+        <a href="/portfolio-site/">
+          <img src="/portfolio-site/images/RO_Logo.PNG" alt="RO Logo" class="logo-image" />
         </a>
-        <a href="">
-          <img src="images/NameLogo.png" alt="Name Logo" class="name-logo" />
+        <a href="/portfolio-site/">
+          <img src="/portfolio-site/images/NameLogo.png" alt="Name Logo" class="name-logo" />
         </a>
       </div>
-      <!-- Navbar inclusion (no changes needed here if it uses relative paths internally) -->
       <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/portfolio/">Portfolio</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
-  </nav>
-  
+        <ul>
+          <li><a href="/portfolio-site/">Home</a></li>
+          <li><a href="/portfolio-site/portfolio/">Portfolio</a></li>
+          <li><a href="/portfolio-site/contact/">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <div class="main-content">
+  <main class="main-content">
+    
+<div class="content-wrapper">
+  <h1>Contact</h1>
+  <div class="page-content">
     <h1>Contact Me</h1>
 <div class="contact-info">
   <p>Email: <a href="mailto:rorange@psu.edu">rorange@psu.edu</a></p>
@@ -46,5 +43,8 @@
 </div>
 
   </div>
+</div>
+
+  </main>
 </body>
 </html>

@@ -52,7 +52,7 @@ export function initModel(modelPath, hdrPath = null) {
 
   // Set up GLTFLoader with MeshoptDecoder
   const loader = new GLTFLoader();
-  loader.setMeshoptDecoder(MeshoptDecoder); // Add this line
+  loader.setMeshoptDecoder(MeshoptDecoder); 
 
   loader.load(
     modelPath,

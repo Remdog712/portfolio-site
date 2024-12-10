@@ -1,15 +1,15 @@
 ---
 title: Lamplight Project
 layout: project.njk
-permalink: lamplight.html
+permalink: /lamplight/index.html
 galleryImages:
-  - "/images/lamplight/Lamp Light Logo.jpg"
-  - "/images/lamplight/Intro Level.jpg"
-  - "/images/lamplight/Cave Level.jpg"
-  - "/images/lamplight/School Level.jpg"
-  - "/images/lamplight/Lava Level.jpg"
-  - "/images/lamplight/Asset Set 1.jpg"
-  - "/images/lamplight/Asset Set 2.jpg"
+  - "/portfolio-site/images/lamplight/Lamp Light Logo.jpg"
+  - "/portfolio-site/images/lamplight/Intro Level.jpg"
+  - "/portfolio-site/images/lamplight/Cave Level.jpg"
+  - "/portfolio-site/images/lamplight/School Level.jpg"
+  - "/portfolio-site/images/lamplight/Lava Level.jpg"
+  - "/portfolio-site/images/lamplight/Asset Set 1.jpg"
+  - "/portfolio-site/images/lamplight/Asset Set 2.jpg"
 ---
 
 # Lamplight
@@ -33,4 +33,3 @@ Lamplight is a game I made alongside another student in Unreal Engine 5 as part 
   </div>
   {% endfor %}
 </div>
-
