@@ -11,7 +11,7 @@ function imageToJson(imagesFolder) {
   .filter(file => /\.(jpg|jpeg|png|gif|webp)$/i.test(file))
   .map(file => ({
     filename: file,
-    filepath: `images/samplework/${file}` // No leading slash
+    filepath: `images/samplework/${file}`
   }));
   
   fs.writeFileSync(outputFile, JSON.stringify(imageData, null, 2));
